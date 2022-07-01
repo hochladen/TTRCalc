@@ -8,7 +8,7 @@ namespace TTRCalc
         private enum FacilityType { Sellbot, Cashbot, Lawbot, Bossbot };
 
         // Point names associated w/ facilities
-        private static Dictionary<FacilityType, string> PointTypes = new()
+        private static Dictionary<FacilityType, string> PointTypes = new Dictionary<FacilityType, string>()
         {
             {
                 FacilityType.Sellbot,
@@ -29,13 +29,13 @@ namespace TTRCalc
         };
 
         // Point values associated w/ facilities
-        private static Dictionary<FacilityType, (string, uint, double)[]> FacilityValues = new()
+        private static Dictionary<FacilityType, (string, uint, double)[]> FacilityValues = new Dictionary<FacilityType, (string, uint, double)[]>()
         {
             {
                 FacilityType.Sellbot,
                 new (string, uint, double)[] {
                     ("Long", 776, 3.0),
-                    //("Medium", 584, 2.0), Commenting this out for now because who does medium factor runs lol
+                    //("Medium", 584, 2.0), Commenting this out for now because who does medium factory runs lol
                     ("Short", 480, 1.0)
                 }
             },
