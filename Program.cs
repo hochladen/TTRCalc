@@ -34,7 +34,7 @@ namespace TTRCalc
             {
                 FacilityType.Sellbot,
                 new (string, uint, double)[] {
-                    ("Long", 776, 3.0),
+                    ("Long", 776, 1.5),
                     //("Medium", 584, 2.0), Commenting this out for now because who does medium factory runs lol
                     ("Short", 480, 1.0)
                 }
